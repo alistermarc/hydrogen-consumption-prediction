@@ -34,7 +34,7 @@ from sklearn.preprocessing import StandardScaler
 warnings.filterwarnings('ignore')
 
 # --- Configuration ---
-DATA_FILE = "MLProject_Data.xlsx"
+DATA_FILE = "..." # confidential
 OUTPUT_DIR = "output"
 MODEL_FILENAME = os.path.join(OUTPUT_DIR, "final_hydrogen_consumption_model.joblib")
 N_TRIALS_OPTUNA = 50 
