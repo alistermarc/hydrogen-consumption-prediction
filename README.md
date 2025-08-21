@@ -29,8 +29,8 @@ The machine learning pipeline is implemented in the `h2_prediction_pipeline.py` 
 
 1.  **Data Loading and Preprocessing**: The data is loaded, and new features (`Hour`, `Year`, `Month`, `Catalyst_Age`) are engineered from the timestamp.
 2.  **Exploratory Data Analysis (EDA)**: The script generates and saves plots to visualize the data and understand the relationships between features.
-3.  **Candidate Model Selection**: `LazyPredict` is used to quickly evaluate and identify the top 3 performing regression models as candidates for further tuning.
-4.  **Outlier Removal**: Outliers are removed from the dataset using Kernel Density Estimation (KDE) to improve model robustness.
+3.  **Outlier Removal**: Outliers are removed from the dataset using Kernel Density Estimation (KDE) to improve model robustness.
+4.  **Candidate Model Selection**: `LazyPredict` is used to quickly evaluate and identify the top 3 performing regression models as candidates for further tuning.
 5.  **Feature Selection**: Recursive Feature Elimination with Cross-Validation (RFECV) is used to select the most important features.
 6.  **Hyperparameter Tuning**: The hyperparameters for the top 3 models (`RandomForest`, `ExtraTrees`, and `LightGBM`) are tuned using Optuna.
 7.  **Model Training and Evaluation**: The best-performing model (Extra Trees Regressor) is trained on the preprocessed and feature-selected data and evaluated on a held-out test set.
